@@ -3,7 +3,7 @@ print "> "
 etage = gets.to_i
 puts "#{etage} etages ? Let'sa gowwwwww!"
 ligne = 1
-espace = 5
+espace = etage
 if etage > 1 && etage < 25
   etage.times do
     espace.times do
