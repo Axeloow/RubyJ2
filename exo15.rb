@@ -4,13 +4,18 @@ etage = gets.to_i
 puts "#{etage} etages ? Let'sa gowwwwww!"
 ligne = 1
 
-etage.times do
-  ligne.times do
-    print "#"
+if etage > 1 && etage < 25
+  etage.times do
+    ligne.times do
+      print "#"
+    end
+    ligne = ligne+1
+    puts
   end
-  ligne = ligne+1
-  puts
+  else
+    puts "Ce n'est pas possible, je n'aurais pas assez de matériaux ! Mammamia !"
 end
+
 
 
 
